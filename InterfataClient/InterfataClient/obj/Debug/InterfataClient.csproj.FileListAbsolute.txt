@@ -1,0 +1,10 @@
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\obj\Debug\InterfataClient.csprojAssemblyReference.cache
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\obj\Debug\InterfataClient.Properties.Resources.resources
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\obj\Debug\InterfataClient.csproj.GenerateResource.cache
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\obj\Debug\InterfataClient.csproj.CoreCompileInputs.cache
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\bin\Debug\InterfataClient.exe.config
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\bin\Debug\InterfataClient.exe
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\bin\Debug\InterfataClient.pdb
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\obj\Debug\InterfataClient.exe
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\obj\Debug\InterfataClient.pdb
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\obj\Debug\InterfataClient.InterfataUtilizator.resources
