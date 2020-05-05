@@ -72,18 +72,51 @@ namespace InterfataAdmin
         private void buttonCarteSterge_Click(object sender, EventArgs e)
         {
             // la apasarea lui se va verifica daca este selectata o carte din lista si se va sterge
+            if(listBoxCarti.SelectedIndex != -1)
+            {
+                //sterge carte
+                String carte = listBoxCarti.SelectedItem.ToString();
+                //...
+            }
+            else
+            {
+                MessageBox.Show("Va rugam selectati o carte!");
+            }
         }
 
         private void buttonCarteStoc_Click(object sender, EventArgs e)
         {
             // la apasarea lui se va deschide o noua fereastra in care se va introduce numarul de carti
             // trebuie verificat daca este selectata vreo carte din lista
+            if(listBoxCarti.SelectedIndex != -1)
+            {
+                String carte = listBoxCarti.SelectedItem.ToString();
+                InterataIntroducereStoc interata = new InterataIntroducereStoc(this, carte);
+                interata.Show();
+                this.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Va rugam selectati o carte!");
+            }
         }
 
         private void buttonCerereAccepta_Click(object sender, EventArgs e)
         {
             // se verifica daca este selectata vreo cerere din lista
             // se va accepta cererea respectiva si se va sterge din lista
+            int indice_selectat = listBoxCereri.SelectedIndex;
+            if (indice_selectat != -1)
+            {
+                String cerere = listBoxCereri.SelectedItem.ToString();
+
+                // se accepta cererea
+            }
+            else
+            {
+                // nu este nici un element selectat
+                MessageBox.Show("Va rugam selectati o cerere!");
+            }
         }
 
         private void buttonCerereRespinge_Click(object sender, EventArgs e)
@@ -100,12 +133,15 @@ namespace InterfataAdmin
             else
             {
                 // nu este nici un element selectat
+                MessageBox.Show("Va rugam selectati o cerere!");
             }
         }
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
             // se va initializa o fereastra de log in a aplicatiei
+            // initializarea ferestrei de log in
+            this.Close();
         }
 
         private void buttonIesire_Click(object sender, EventArgs e)
@@ -159,7 +195,8 @@ namespace InterfataAdmin
             if(index == 0)
             {
                 groupBoxCarte.Enabled = true;
-            }else if(index == 3)
+            }
+            else if(index == 3)
             {
                 groupBoxCerere.Enabled = true;
             }

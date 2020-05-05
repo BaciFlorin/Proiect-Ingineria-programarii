@@ -416,7 +416,7 @@
             this.buttonIesire.Name = "buttonIesire";
             this.buttonIesire.Size = new System.Drawing.Size(75, 23);
             this.buttonIesire.TabIndex = 8;
-            this.buttonIesire.Text = "Valea! :)";
+            this.buttonIesire.Text = "Iesire";
             this.buttonIesire.UseVisualStyleBackColor = true;
             this.buttonIesire.Click += new System.EventHandler(this.buttonIesire_Click);
             // 

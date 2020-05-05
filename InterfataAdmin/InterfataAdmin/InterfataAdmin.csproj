@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterataIntroducereStoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterataIntroducereStoc.Designer.cs">
+      <DependentUpon>InterataIntroducereStoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="InterfataBibliotecar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="InterataIntroducereStoc.resx">
+      <DependentUpon>InterataIntroducereStoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InterfataBibliotecar.resx">
       <DependentUpon>InterfataBibliotecar.cs</DependentUpon>
     </EmbeddedResource>

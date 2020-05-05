@@ -9,3 +9,4 @@ F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Interfa
 F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\InterfataAdmin\InterfataAdmin\obj\Debug\InterfataAdmin.pdb
 F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\InterfataAdmin\InterfataAdmin\obj\Debug\InterfataAdmin.InterfataBibliotecar.resources
 F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\InterfataAdmin\InterfataAdmin\obj\Debug\InterfataAdmin.InterfataIntroducereCarte.resources
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\InterfataAdmin\InterfataAdmin\obj\Debug\InterfataAdmin.InterataIntroducereStoc.resources
