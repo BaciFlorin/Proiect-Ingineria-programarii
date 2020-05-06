@@ -75,12 +75,17 @@ namespace InterfataClient
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
-            //open login ui
+            var result = MessageBox.Show("Are you sure you want to logout?", "Warning", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                //log out
+                //open login ui
+            }
         }
 
         private void listBoxCartiImprumutate_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //getbookinfo
+            //getbookinfo and place it in bookInfo
             String bookInfo = "";
             richTextBoxDetails.Text = bookInfo;
         }
@@ -90,6 +95,17 @@ namespace InterfataClient
             //getbookinfo
             String bookInfo = "";
             richTextBoxDetails.Text = bookInfo;
+        }
+
+        private void linkLabelUsername_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //to do
+            //afisare intr-o noua fereastra a informatiilor utilizatorului
+
+            //preluare informatii si depundere in userInfo
+            String userInfo = "Info";
+            MessageBox.Show(userInfo, "Informații despre utilizator");
+
         }
     }
 }

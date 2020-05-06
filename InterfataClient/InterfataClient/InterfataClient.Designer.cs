@@ -50,7 +50,7 @@
             this.buttonBorrow = new System.Windows.Forms.Button();
             this.buttonReturn = new System.Windows.Forms.Button();
             this.groupBoxUser = new System.Windows.Forms.GroupBox();
-            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.linkLabelUsername = new System.Windows.Forms.LinkLabel();
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.roundPictureBoxUser = new InterfataClient.RoundPictureBox();
             this.toolTipLogOut = new System.Windows.Forms.ToolTip(this.components);
@@ -272,29 +272,32 @@
             // 
             // groupBoxUser
             // 
-            this.groupBoxUser.Controls.Add(this.textBoxUsername);
+            this.groupBoxUser.Controls.Add(this.linkLabelUsername);
             this.groupBoxUser.Controls.Add(this.buttonLogOut);
             this.groupBoxUser.Controls.Add(this.roundPictureBoxUser);
             this.groupBoxUser.Location = new System.Drawing.Point(629, 24);
             this.groupBoxUser.Name = "groupBoxUser";
-            this.groupBoxUser.Size = new System.Drawing.Size(285, 102);
+            this.groupBoxUser.Size = new System.Drawing.Size(302, 102);
             this.groupBoxUser.TabIndex = 7;
             this.groupBoxUser.TabStop = false;
             this.groupBoxUser.Text = "User";
             // 
-            // textBoxUsername
+            // linkLabelUsername
             // 
-            this.textBoxUsername.Location = new System.Drawing.Point(75, 39);
-            this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.ReadOnly = true;
-            this.textBoxUsername.Size = new System.Drawing.Size(151, 22);
-            this.textBoxUsername.TabIndex = 2;
-            this.textBoxUsername.Text = "Username";
+            this.linkLabelUsername.AutoSize = true;
+            this.linkLabelUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelUsername.Location = new System.Drawing.Point(90, 42);
+            this.linkLabelUsername.Name = "linkLabelUsername";
+            this.linkLabelUsername.Size = new System.Drawing.Size(77, 18);
+            this.linkLabelUsername.TabIndex = 2;
+            this.linkLabelUsername.TabStop = true;
+            this.linkLabelUsername.Text = "Username";
+            this.linkLabelUsername.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelUsername_LinkClicked);
             // 
             // buttonLogOut
             // 
             this.buttonLogOut.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogOut.Image")));
-            this.buttonLogOut.Location = new System.Drawing.Point(232, 31);
+            this.buttonLogOut.Location = new System.Drawing.Point(212, 33);
             this.buttonLogOut.Name = "buttonLogOut";
             this.buttonLogOut.Size = new System.Drawing.Size(47, 39);
             this.buttonLogOut.TabIndex = 1;
@@ -304,7 +307,7 @@
             // roundPictureBoxUser
             // 
             this.roundPictureBoxUser.Image = ((System.Drawing.Image)(resources.GetObject("roundPictureBoxUser.Image")));
-            this.roundPictureBoxUser.Location = new System.Drawing.Point(7, 22);
+            this.roundPictureBoxUser.Location = new System.Drawing.Point(6, 23);
             this.roundPictureBoxUser.Name = "roundPictureBoxUser";
             this.roundPictureBoxUser.Size = new System.Drawing.Size(62, 60);
             this.roundPictureBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -364,10 +367,10 @@
         private RoundPictureBox roundPictureBoxUser;
         private System.Windows.Forms.Button buttonLogOut;
         private System.Windows.Forms.ToolTip toolTipLogOut;
-        private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.ListBox listBoxCartiDisponibile;
         private System.Windows.Forms.ListBox listBoxCartiImprumutate;
         private System.Windows.Forms.RichTextBox richTextBoxDetails;
+        private System.Windows.Forms.LinkLabel linkLabelUsername;
     }
 }
 
