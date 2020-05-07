@@ -19,7 +19,7 @@ namespace InterfataAdmin
 
         private void text_box_cautare_MouseClick(object sender, MouseEventArgs e)
         { 
-            if (textBoxCauta.Text == "Autor/Titlu/Gen/User")
+            if (textBoxCauta.ForeColor == SystemColors.InactiveCaption)
             {
                 textBoxCauta.Text = "";
                 textBoxCauta.ForeColor = Color.Black;
@@ -30,7 +30,13 @@ namespace InterfataAdmin
         {
             if (textBoxCauta.Text == "")
             {
-                textBoxCauta.Text = "Autor/Titlu/Gen/User";
+                int tab = tabControlInfo.SelectedIndex;
+                if(tab == 0)
+                    textBoxCauta.Text = "Autor/Titlu/Gen";
+                else if(tab == 1)
+                    textBoxCauta.Text = "Autor/Titlu/Gen/User";
+                else if(tab == 2)
+                    textBoxCauta.Text = "Nume utilizator";
                 textBoxCauta.ForeColor = SystemColors.InactiveCaption;
             }
         }
@@ -152,38 +158,51 @@ namespace InterfataAdmin
 
         private void listBoxCereri_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // se ia si se afiseaza in dreapta informatii despre cerere
-            String cerere = listBoxCereri.SelectedItem.ToString();
+            if (listBoxCereri.SelectedIndex != -1)
+            {
+                // se ia si se afiseaza in dreapta informatii despre cerere
+                String cerere = listBoxCereri.SelectedItem.ToString();
 
-            //afisare info la dreapta
-            richTextBoxInformatii.Text = cerere;
+                //afisare info la dreapta
+                richTextBoxInformatii.Text = cerere;
+            }
         }
 
         private void listBoxUtilizatori_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // se ia si se afiseaza in dreapta informatii despre utilizator
-            String utilizator = listBoxUtilizatori.SelectedItem.ToString();
+            if (listBoxUtilizatori.SelectedIndex != -1)
+            {
+                // se ia si se afiseaza in dreapta informatii despre utilizator
+                String utilizator = listBoxUtilizatori.SelectedItem.ToString();
 
-            //afisare info
-            richTextBoxInformatii.Text = utilizator;
+                //afisare info
+                richTextBoxInformatii.Text = utilizator;
+
+            }
         }
 
         private void listBoxImprumuturi_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // se ia si se afiseaza in chenarul din dreapta detalii despre imprumut
-            String imprumut = listBoxImprumuturi.SelectedItem.ToString();
+            if (listBoxImprumuturi.SelectedIndex != -1)
+            {
+                // se ia si se afiseaza in chenarul din dreapta detalii despre imprumut
+                String imprumut = listBoxImprumuturi.SelectedItem.ToString();
 
-            // afisare informatie in dreapta
-            richTextBoxInformatii.Text = imprumut;
+                // afisare informatie in dreapta
+                richTextBoxInformatii.Text = imprumut;
+            }
         }
 
         private void listBoxCarti_SelectedIndexChanged(object sender, EventArgs e)
         {
             // se ia si se afiseaza detalii despre carte selectata
-            String carte = listBoxCarti.SelectedItem.ToString();
+            if (listBoxCarti.SelectedIndex != -1)
+            {
+                String carte = listBoxCarti.SelectedItem.ToString();
 
-            //afisare informatii
-            richTextBoxInformatii.Text = carte;
+                //afisare informatii
+                richTextBoxInformatii.Text = carte;
+            }
         }
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
@@ -191,14 +210,45 @@ namespace InterfataAdmin
             int index = tabControlInfo.SelectedIndex;
             groupBoxCarte.Enabled = false;
             groupBoxCerere.Enabled = false;
+            groupBoxCautare.Enabled = true;
 
-            if(index == 0)
+            radioButtonFiltruAutor.Enabled = true;
+            radioButtonFiltruUser.Enabled = true;
+            radioButtonFiltruGen.Enabled = true;
+            radioButtonFiltruNone.Enabled = true;
+            radioButtonFiltruTitlu.Enabled = true;
+
+
+            if (index == 0)
             {
+                radioButtonFiltruUser.Enabled = false;
+                if(radioButtonFiltruUser.Checked)
+                {
+                    radioButtonFiltruNone.Checked = true;
+                }
+                textBoxCauta.Text = "Titlu/Autor/Gen";
                 groupBoxCarte.Enabled = true;
+            }
+            else if(index == 1)
+            {
+                textBoxCauta.Text = "Titlu/Autor/Gen/User";
+                if (!radioButtonFiltruUser.Enabled)
+                    radioButtonFiltruUser.Enabled = true;
+            }
+            else if(index == 2)
+            {
+                textBoxCauta.Text = "Nume utilizator";
+                radioButtonFiltruAutor.Enabled = false;
+                radioButtonFiltruUser.Enabled = false;
+                radioButtonFiltruGen.Enabled =false;
+                radioButtonFiltruNone.Enabled = false;
+                radioButtonFiltruTitlu.Enabled = false;
             }
             else if(index == 3)
             {
+                groupBoxCautare.Enabled = false;
                 groupBoxCerere.Enabled = true;
+                textBoxCauta.Text = "";
             }
         }
     }

@@ -167,6 +167,7 @@
             // radioButtonFiltruUser
             // 
             this.radioButtonFiltruUser.AutoSize = true;
+            this.radioButtonFiltruUser.Enabled = false;
             this.radioButtonFiltruUser.Location = new System.Drawing.Point(224, 41);
             this.radioButtonFiltruUser.Name = "radioButtonFiltruUser";
             this.radioButtonFiltruUser.Size = new System.Drawing.Size(47, 17);
@@ -203,7 +204,7 @@
             this.textBoxCauta.Size = new System.Drawing.Size(285, 20);
             this.textBoxCauta.TabIndex = 1;
             this.textBoxCauta.TabStop = false;
-            this.textBoxCauta.Text = "Autor/Titlu/Gen/User";
+            this.textBoxCauta.Text = "Autor/Titlu/Gen";
             this.textBoxCauta.MouseClick += new System.Windows.Forms.MouseEventHandler(this.text_box_cautare_MouseClick);
             this.textBoxCauta.Leave += new System.EventHandler(this.text_box_cautare_Leave);
             // 
