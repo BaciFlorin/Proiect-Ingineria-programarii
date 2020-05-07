@@ -5,11 +5,19 @@ using System.Collections.Generic;
 
 namespace SqlHandle
 {
+    /// <summary>
+    /// Clasa prin care se realizeaza operatii asupra tabelei Imprumut
+    /// </summary>
     class ImprumutHandler
     {
         private database_connection _dbConnection = database_connection.get_database_connection();
 
-        public void insereaza(Imprumut imprumut)
+        
+        /// <summary>
+        /// Insereaza un nou imprumut in baza de date
+        /// </summary>
+        /// <param name="imprumut"></param>
+        public void Insereaza(Imprumut imprumut)
         {
             bool result = false;
             string commandText = "INSERT INTO Imprumut (ID_Carte, ID_User, Data_imprumut,Data_restituire)" +
@@ -19,31 +27,45 @@ namespace SqlHandle
 
             if (result)
             {
+                //TO DO
                 //log succes
+                
             }
             else
             {
+                //TO DO
                 //log eroare
             }
 
 
         }
 
-        public void sterge(Imprumut imprumut)
+        /// <summary>
+        /// Se sterge imprumutul dat ca parametru din baza de date
+        /// </summary>
+        /// <param name="imprumut"></param>
+        public void Sterge(Imprumut imprumut)
         {
             bool result = false;
             string commandText = "DELETE FROM Imprumut WHERE ID_Imprumut=" + imprumut.IdImprumut + "";
             result = _dbConnection.execute_comm(commandText);
             if (result)
             {
+                //TO DO
                 //log succes
             }
             else
             {
+                //TO DO
                 //log eroare
             }
         }
-        public List<Imprumut> selecteaza()
+
+        /// <summary>
+        /// Metoda cauta si returneaza toate imprumuturile existente
+        /// </summary>
+        /// <returns></returns>
+        public List<Imprumut> Selecteaza()
         {
             List<Imprumut> imprumuturi = new List<Imprumut>();
             string commandText = "SELECT * FROM Imprumut";
@@ -63,7 +85,13 @@ namespace SqlHandle
 
             return imprumuturi;
         }
-        public List<Imprumut> selecteazaDupaUtilizator(int userId)
+
+        /// <summary>
+        /// Cauta si returneaza toate imprumuturile ale unui utilizator dat
+        /// </summary>
+        /// <param name="userId">Id-ul utilizatorului dupa care se filtreaza</param>
+        /// <returns></returns>
+        public List<Imprumut> SelecteazaDupaUtilizator(int userId)
         {
             List<Imprumut> imprumuturi = new List<Imprumut>();
             string commandText = "SELECT * FROM Imprumut WHERE ID_User=" + userId + "";
@@ -85,7 +113,12 @@ namespace SqlHandle
             return imprumuturi;
         }
 
-        public List<Imprumut> selecteazaDupaAutor(string autor)
+        /// <summary>
+        /// Cauta si returneaza toate imprumuturile pentru carti de la un autor dat
+        /// </summary>
+        /// <param name="autor">Numele autorului dupa care se filtreaza</param>
+        /// <returns></returns>
+        public List<Imprumut> SelecteazaDupaAutor(string autor)
         {
             List<Imprumut> imprumuturi = new List<Imprumut>();
             string commandText = "SELECT * FROM Imprumut WHERE ID_Carte in " +
@@ -107,7 +140,12 @@ namespace SqlHandle
 
             return imprumuturi;
         }
-        public List<Imprumut> selecteazaDupaTitlu(string titlu)
+        /// <summary>
+        /// Cauta si returneaza toate imprumuturile pentru carti cu un anumit titlu
+        /// </summary>
+        /// <param name="titlu">Titlul cartii dupa care se filtreaza</param>
+        /// <returns></returns>
+        public List<Imprumut> SelecteazaDupaTitlu(string titlu)
         {
             List<Imprumut> imprumuturi = new List<Imprumut>();
             string commandText = "SELECT * FROM Imprumut WHERE ID_Carte in " +
@@ -130,7 +168,12 @@ namespace SqlHandle
             return imprumuturi;
         }
 
-        public List<Imprumut> selecteazaDupaCategorie(string categorie)
+        /// <summary>
+        /// Cauta si returneaza toate imprumuturile pentru carti dintr-o categorie anume
+        /// </summary>
+        /// <param name="categorie">Numele categoriei dupa care se filtreaza</param>
+        /// <returns></returns>
+        public List<Imprumut> SelecteazaDupaCategorie(string categorie)
         {
             List<Imprumut> imprumuturi = new List<Imprumut>();
             string commandText = "SELECT * FROM Imprumut WHERE ID_Carte in " +

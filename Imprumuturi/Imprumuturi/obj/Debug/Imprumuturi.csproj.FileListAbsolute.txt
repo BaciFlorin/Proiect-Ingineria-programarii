@@ -1,6 +1,0 @@
-D:\facultate\An3\sem2\ip_proiect\Imprumuturi\Imprumuturi\bin\Debug\Imprumuturi.dll
-D:\facultate\An3\sem2\ip_proiect\Imprumuturi\Imprumuturi\bin\Debug\Imprumuturi.pdb
-D:\facultate\An3\sem2\ip_proiect\Imprumuturi\Imprumuturi\obj\Debug\Imprumuturi.csprojAssemblyReference.cache
-D:\facultate\An3\sem2\ip_proiect\Imprumuturi\Imprumuturi\obj\Debug\Imprumuturi.csproj.CoreCompileInputs.cache
-D:\facultate\An3\sem2\ip_proiect\Imprumuturi\Imprumuturi\obj\Debug\Imprumuturi.dll
-D:\facultate\An3\sem2\ip_proiect\Imprumuturi\Imprumuturi\obj\Debug\Imprumuturi.pdb

@@ -2,6 +2,7 @@
 
 namespace Entities
 {
+    
     public class Imprumut
     {
         private int _idImprumut;
@@ -9,6 +10,16 @@ namespace Entities
         private int _idUser;
         private DateTime _dataImprumut;
         private DateTime _dataRestituire;
+
+  
+        /// <summary>
+        /// Constructor ce va fi folosit la crearea unui nou Imprumut
+        /// _idImprumut se va seta la adaugare in baza de date
+        /// </summary>
+        /// <param name="idCarte"></param>
+        /// <param name="idUser"></param>
+        /// <param name="dataImprumut"></param>
+        /// <param name="dataRestituire"></param>
 
         public Imprumut(int idCarte, int idUser, DateTime dataImprumut, DateTime dataRestituire)
         {
@@ -18,6 +29,14 @@ namespace Entities
             _dataRestituire = dataRestituire;
 
         }
+        /// <summary>
+        /// Constructor ce va fi folosit la interogarea bazei de date
+        /// </summary>
+        /// <param name="idImprumut"></param>
+        /// <param name="idCarte"></param>
+        /// <param name="idUser"></param>
+        /// <param name="dataImprumut"></param>
+        /// <param name="dataRestituire"></param>
         public Imprumut(int idImprumut,int idCarte, int idUser, DateTime dataImprumut, DateTime dataRestituire)
         {
             _idImprumut = idImprumut;
@@ -27,6 +46,7 @@ namespace Entities
             _dataRestituire = dataRestituire;
 
         }
+        
         public int IdImprumut
         {
             get
