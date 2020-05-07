@@ -29,12 +29,14 @@ namespace SqlHandle
             {
                 //TO DO
                 //log succes
-                
+                Console.WriteLine("Inserare efectuata cu succes");
+
             }
             else
             {
                 //TO DO
                 //log eroare
+                Console.WriteLine("Inserare terminata cu eroare");
             }
 
 
@@ -53,11 +55,13 @@ namespace SqlHandle
             {
                 //TO DO
                 //log succes
+                Console.WriteLine("Stergere efectuata cu succes");
             }
             else
             {
                 //TO DO
                 //log eroare
+                Console.WriteLine("Stergere terminata cu eroare");
             }
         }
 
