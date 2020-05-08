@@ -1,0 +1,11 @@
+D:\ProiectIP\OperatiiCereri\OperatiiCereri\bin\Debug\netcoreapp2.0\OperatiiCereri.deps.json
+D:\ProiectIP\OperatiiCereri\OperatiiCereri\bin\Debug\netcoreapp2.0\OperatiiCereri.runtimeconfig.json
+D:\ProiectIP\OperatiiCereri\OperatiiCereri\bin\Debug\netcoreapp2.0\OperatiiCereri.runtimeconfig.dev.json
+D:\ProiectIP\OperatiiCereri\OperatiiCereri\bin\Debug\netcoreapp2.0\OperatiiCereri.dll
+D:\ProiectIP\OperatiiCereri\OperatiiCereri\obj\Debug\netcoreapp2.0\OperatiiCereri.csprojResolveAssemblyReference.cache
+D:\ProiectIP\OperatiiCereri\OperatiiCereri\obj\Debug\netcoreapp2.0\OperatiiCereri.csproj.CoreCompileInputs.cache
+D:\ProiectIP\OperatiiCereri\OperatiiCereri\obj\Debug\netcoreapp2.0\OperatiiCereri.AssemblyInfoInputs.cache
+D:\ProiectIP\OperatiiCereri\OperatiiCereri\obj\Debug\netcoreapp2.0\OperatiiCereri.AssemblyInfo.cs
+D:\ProiectIP\OperatiiCereri\OperatiiCereri\bin\Debug\netcoreapp2.0\OperatiiCereri.pdb
+D:\ProiectIP\OperatiiCereri\OperatiiCereri\obj\Debug\netcoreapp2.0\OperatiiCereri.dll
+D:\ProiectIP\OperatiiCereri\OperatiiCereri\obj\Debug\netcoreapp2.0\OperatiiCereri.pdb
