@@ -28,29 +28,34 @@ namespace SqliteHandle
             if (_instance == null)
             {
                 _instance = new DatabaseConnection();
+				_instance.execute_command("PRAGMA foreign_keys = ON;");
             }
             return _instance;
         }
-        public List<List<string>> execute_select_comand(string database_operation,string[] cols)
+
+
+        public List<List<string>> execute_select_comand(string database_operation, string[] cols)
         {
             List<List<string>> ret_val = new List<List<string>>();
             cmd.CommandText = database_operation;
-            SQLiteDataReader result = cmd.ExecuteReader();
-            if (result.HasRows)
+            using (SQLiteDataReader result = cmd.ExecuteReader())
             {
-                while(result.Read())
+                if (result.HasRows)
                 {
-                    List<string> aux = new List<string>();
+                    while (result.Read())
+                    {
+                        List<string> aux = new List<string>();
 
-                    for (int i = 0; i < cols.Length; i++)
-                        aux.Add(result[cols[i]].ToString());
+                        for (int i = 0; i < cols.Length; i++)
+                            aux.Add(result[cols[i]].ToString());
 
-                    ret_val.Add(aux);
+                        ret_val.Add(aux);
+                    }
                 }
             }
             return ret_val;
-            
         }
+
         public bool execute_command(string database_operation)
         {
             bool status = true;

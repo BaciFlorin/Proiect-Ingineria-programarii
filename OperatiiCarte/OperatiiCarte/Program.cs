@@ -15,11 +15,7 @@ namespace SqliteHandle
         }
         static void Main(string[] args)
         {
-            List<Carte> output;
-            OperatiiBazaDeDateCarte.stergeCarte(4);
-            output = OperatiiBazaDeDateCarte.selecteazaCartiDupaAutor("a");
-            show_output(output);
-            Console.Read();
+           
         }
     }
 }
