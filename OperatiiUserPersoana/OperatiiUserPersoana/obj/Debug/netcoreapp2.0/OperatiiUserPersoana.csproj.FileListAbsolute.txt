@@ -1,0 +1,11 @@
+D:\ProiectIP\OperatiiUserPersoana\OperatiiUserPersoana\bin\Debug\netcoreapp2.0\OperatiiUserPersoana.deps.json
+D:\ProiectIP\OperatiiUserPersoana\OperatiiUserPersoana\bin\Debug\netcoreapp2.0\OperatiiUserPersoana.runtimeconfig.json
+D:\ProiectIP\OperatiiUserPersoana\OperatiiUserPersoana\bin\Debug\netcoreapp2.0\OperatiiUserPersoana.runtimeconfig.dev.json
+D:\ProiectIP\OperatiiUserPersoana\OperatiiUserPersoana\bin\Debug\netcoreapp2.0\OperatiiUserPersoana.dll
+D:\ProiectIP\OperatiiUserPersoana\OperatiiUserPersoana\obj\Debug\netcoreapp2.0\OperatiiUserPersoana.csprojResolveAssemblyReference.cache
+D:\ProiectIP\OperatiiUserPersoana\OperatiiUserPersoana\obj\Debug\netcoreapp2.0\OperatiiUserPersoana.csproj.CoreCompileInputs.cache
+D:\ProiectIP\OperatiiUserPersoana\OperatiiUserPersoana\obj\Debug\netcoreapp2.0\OperatiiUserPersoana.AssemblyInfoInputs.cache
+D:\ProiectIP\OperatiiUserPersoana\OperatiiUserPersoana\obj\Debug\netcoreapp2.0\OperatiiUserPersoana.AssemblyInfo.cs
+D:\ProiectIP\OperatiiUserPersoana\OperatiiUserPersoana\bin\Debug\netcoreapp2.0\OperatiiUserPersoana.pdb
+D:\ProiectIP\OperatiiUserPersoana\OperatiiUserPersoana\obj\Debug\netcoreapp2.0\OperatiiUserPersoana.dll
+D:\ProiectIP\OperatiiUserPersoana\OperatiiUserPersoana\obj\Debug\netcoreapp2.0\OperatiiUserPersoana.pdb
