@@ -1,6 +1,16 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        Imprumut.cs                                       *
+ *  Copyright:   (c) 2020, Atomei Georgiana                               *
+ *  Description: Clasa contine schema unui obiect de tip Imprumut         *
+ *               din baza de date                                         *         
+ *                                                                        *
+ **************************************************************************/
 
-namespace Entities
+
+using System;
+
+namespace Entitati
 {
     
     public class Imprumut
@@ -103,6 +113,8 @@ namespace Entities
                 _dataRestituire = value;
             }
         }
+
+
         public override string ToString()
         {
             return "Id imprumut=" + IdImprumut + ",\n" +

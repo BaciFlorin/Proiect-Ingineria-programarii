@@ -4,7 +4,7 @@ using System.Text;
 
 using System.Data.SQLite;
 
-namespace SqlHandle
+namespace SqliteHandle
 {
 
     class database_connection

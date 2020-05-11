@@ -1,14 +1,23 @@
-﻿using Entities;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        ImprumutHandler.cs                                       *
+ *  Copyright:   (c) 2020, Atomei Georgiana                               *
+ *  Description: Contine implememtarea pentru toate operatiile necesare   *
+ *  pentru manipularea unui obiect de tip Imprumut.                       *
+ *                                                                        *
+ **************************************************************************/
+
+using Entitati;
 using System;
 using System.Collections.Generic;
+using SqliteHandle;
 
-
-namespace SqlHandle
+namespace Modele
 {
     /// <summary>
     /// Clasa prin care se realizeaza operatii asupra tabelei Imprumut
     /// </summary>
-    class ImprumutHandler
+    public class ImprumutHandler
     {
         private database_connection _dbConnection = database_connection.get_database_connection();
 
@@ -24,51 +33,25 @@ namespace SqlHandle
               " VALUES('" + imprumut.IdCarte + "', '" + imprumut.IdUser + "', '" + imprumut.DataImprumut.ToString("yyyy-MM-dd HH:mm:ss") + "', '" + imprumut.DataRestituire.ToString("yyyy-MM-dd HH:mm:ss")  + "');";
 
             result = _dbConnection.execute_comm(commandText);
-
-            if (result)
-            {
-                //TO DO
-                //log succes
-                Console.WriteLine("Inserare efectuata cu succes");
-
-            }
-            else
-            {
-                //TO DO
-                //log eroare
-                Console.WriteLine("Inserare terminata cu eroare");
-            }
-
-
+            
         }
-
+       
         /// <summary>
-        /// Se sterge imprumutul dat ca parametru din baza de date
+        /// Se sterge un imprumut din baza de date
+        /// Imprumutul e identificat in mod unic de id
         /// </summary>
-        /// <param name="imprumut"></param>
-        public void Sterge(Imprumut imprumut)
+        /// <param name="idImprumut"></param>
+        public void Sterge(int idImprumut)
         {
             bool result = false;
-            string commandText = "DELETE FROM Imprumut WHERE ID_Imprumut=" + imprumut.IdImprumut + "";
+            string commandText = "DELETE FROM Imprumut WHERE ID_Imprumut=" + idImprumut + "";
             result = _dbConnection.execute_comm(commandText);
-            if (result)
-            {
-                //TO DO
-                //log succes
-                Console.WriteLine("Stergere efectuata cu succes");
-            }
-            else
-            {
-                //TO DO
-                //log eroare
-                Console.WriteLine("Stergere terminata cu eroare");
-            }
         }
 
         /// <summary>
-        /// Metoda cauta si returneaza toate imprumuturile existente
+        /// Metoda realizeaza cautarea tuturor imprumuturile existente
         /// </summary>
-        /// <returns></returns>
+        /// <returns>O lista de obiecte tip Imprumut</returns>
         public List<Imprumut> Selecteaza()
         {
             List<Imprumut> imprumuturi = new List<Imprumut>();
@@ -91,10 +74,11 @@ namespace SqlHandle
         }
 
         /// <summary>
-        /// Cauta si returneaza toate imprumuturile ale unui utilizator dat
+        /// Metoda realizeaza cautarea tuturor imprumuturilor ale unui utilizator dat
+        /// Utilizatorul e identificat prin id
         /// </summary>
         /// <param name="userId">Id-ul utilizatorului dupa care se filtreaza</param>
-        /// <returns></returns>
+        /// <returns>O lista de obiecte tip Imprumut</returns>
         public List<Imprumut> SelecteazaDupaUtilizator(int userId)
         {
             List<Imprumut> imprumuturi = new List<Imprumut>();
@@ -118,10 +102,10 @@ namespace SqlHandle
         }
 
         /// <summary>
-        /// Cauta si returneaza toate imprumuturile pentru carti de la un autor dat
+        /// Metoda realizeaza cautarea tuturor imprumuturilor de la un autor dat
         /// </summary>
         /// <param name="autor">Numele autorului dupa care se filtreaza</param>
-        /// <returns></returns>
+        /// <returns>O lista de obiecte tip Imprumut</returns>
         public List<Imprumut> SelecteazaDupaAutor(string autor)
         {
             List<Imprumut> imprumuturi = new List<Imprumut>();
@@ -144,11 +128,13 @@ namespace SqlHandle
 
             return imprumuturi;
         }
+
+
         /// <summary>
-        /// Cauta si returneaza toate imprumuturile pentru carti cu un anumit titlu
+        /// Metoda realizeaza cautarea tuturor imprumuturilor pentru carti cu un anumit titlu
         /// </summary>
         /// <param name="titlu">Titlul cartii dupa care se filtreaza</param>
-        /// <returns></returns>
+        /// <returns>O lista de obiecte tip Imprumut</returns>
         public List<Imprumut> SelecteazaDupaTitlu(string titlu)
         {
             List<Imprumut> imprumuturi = new List<Imprumut>();
@@ -173,10 +159,10 @@ namespace SqlHandle
         }
 
         /// <summary>
-        /// Cauta si returneaza toate imprumuturile pentru carti dintr-o categorie anume
+        /// Metoda realizeaza cautarea tuturor imprumuturilor pentru carti dintr-o categorie anume
         /// </summary>
         /// <param name="categorie">Numele categoriei dupa care se filtreaza</param>
-        /// <returns></returns>
+        /// <returns>O lista de obiecte tip Imprumut</returns>
         public List<Imprumut> SelecteazaDupaCategorie(string categorie)
         {
             List<Imprumut> imprumuturi = new List<Imprumut>();
