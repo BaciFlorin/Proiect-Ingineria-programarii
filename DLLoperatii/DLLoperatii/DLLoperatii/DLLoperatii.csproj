@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="DLLdatabase">
+      <HintPath>..\..\..\DLLdatabase\DLLdatabase\DLLdatabase\bin\Debug\netcoreapp2.0\DLLdatabase.dll</HintPath>
+    </Reference>
+    <Reference Include="DLLentitati">
+      <HintPath>..\..\..\DLLentitati\DLLentitati\DLLentitati\bin\Debug\netcoreapp2.0\DLLentitati.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
