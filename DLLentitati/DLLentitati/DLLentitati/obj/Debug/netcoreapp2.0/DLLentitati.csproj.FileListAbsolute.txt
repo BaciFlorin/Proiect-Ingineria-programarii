@@ -1,9 +1,0 @@
-D:\new_branch_ip_project\DLLentitati\DLLentitati\DLLentitati\bin\Debug\netcoreapp2.0\DLLentitati.deps.json
-D:\new_branch_ip_project\DLLentitati\DLLentitati\DLLentitati\bin\Debug\netcoreapp2.0\DLLentitati.dll
-D:\new_branch_ip_project\DLLentitati\DLLentitati\DLLentitati\bin\Debug\netcoreapp2.0\DLLentitati.pdb
-D:\new_branch_ip_project\DLLentitati\DLLentitati\DLLentitati\obj\Debug\netcoreapp2.0\DLLentitati.csproj.CoreCompileInputs.cache
-D:\new_branch_ip_project\DLLentitati\DLLentitati\DLLentitati\obj\Debug\netcoreapp2.0\DLLentitati.AssemblyInfoInputs.cache
-D:\new_branch_ip_project\DLLentitati\DLLentitati\DLLentitati\obj\Debug\netcoreapp2.0\DLLentitati.AssemblyInfo.cs
-D:\new_branch_ip_project\DLLentitati\DLLentitati\DLLentitati\obj\Debug\netcoreapp2.0\DLLentitati.dll
-D:\new_branch_ip_project\DLLentitati\DLLentitati\DLLentitati\obj\Debug\netcoreapp2.0\DLLentitati.pdb
-D:\new_branch_ip_project\DLLentitati\DLLentitati\DLLentitati\obj\Debug\netcoreapp2.0\DLLentitati.csprojResolveAssemblyReference.cache
