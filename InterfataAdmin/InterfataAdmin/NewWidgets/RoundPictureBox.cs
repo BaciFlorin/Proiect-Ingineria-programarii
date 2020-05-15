@@ -1,4 +1,14 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        RoundPictureBox.cs                                       *
+ *  Copyright:   (c) 2020, Bacica Florin                                  *
+ *  E-mail:      florin.bacica@student.tuiasi.ro                          *
+ *  Description: Modificarea unui pictureBox in asa fel incat sa          *
+ *               aiba imagea incadrata intr-un chenar rotund.             *
+ *                                                                        *
+ **************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

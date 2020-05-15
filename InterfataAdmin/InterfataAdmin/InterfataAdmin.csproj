@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DLLentitati, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLLentitati.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -103,6 +107,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\default.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControllerInterfataAdmin\ControllerInterfataAdmin.csproj">
+      <Project>{26e7db43-ab0d-4ec3-8ce3-e30700f2a32b}</Project>
+      <Name>ControllerInterfataAdmin</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,14 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        InterfataBibliotecar.cs                                  *
+ *  Copyright:   (c) 2020, Bacica Florin                                  *
+ *  E-mail:      florin.bacica@student.tuiasi.ro                          *
+ *  Description: Clasa care controleaza felul cum se comporta          *
+ *               interfata grafica a bibliotecarului.                     *
+ *                                                                        *
+ **************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,14 +17,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Comune;
+using Entitati;
 
 namespace InterfataAdmin
 {
-    public partial class InterfataBibliotecar : Form
+    public partial class InterfataBibliotecar : Form, IViewAdmin
     {
+        private IControllerAdmin _controller;
         public InterfataBibliotecar()
         {
             InitializeComponent();
+        }
+
+        public void SetController(IControllerAdmin controller)
+        {
+            _controller = controller;
+           
+        }
+
+        public void Start()
+        {
+            _controller.Init();
+            Application.EnableVisualStyles();
+            Application.Run(this);
         }
 
         private void text_box_cautare_MouseClick(object sender, MouseEventArgs e)
@@ -45,32 +71,40 @@ namespace InterfataAdmin
         {
             // de completat cu insctructiuni care cauta in lista din tab-ul deschis obiecte in functie de ce e scris in casuta
             // text si in functie de radioButtonul selectat
+            int tabSelected = tabControlInfo.SelectedIndex;
+            string textDeCautat = textBoxCauta.Text;
             if(radioButtonFiltruAutor.Checked)
             {
                 //filtrare dupa autor
+                _controller.FiltreazaDupaAutor(tabSelected, textDeCautat);
             }
             else if(radioButtonFiltruGen.Checked)
             {
                 //filtrare dupa gen
+                _controller.FiltreazaDupaGen(tabSelected, textDeCautat);
             }
             else if(radioButtonFiltruNone.Checked)
             {
                 //afisare continut neflirtat
+                _controller.AfiseazaToate(tabSelected);
             }
             else if(radioButtonFiltruTitlu.Checked)
             {
                 //afisare continut filtrat dupa titlu
+                _controller.FiltreazaDupaTitlu(tabSelected, textDeCautat);
             }
             else
             {
                 //filtrare dupa user
+                _controller.FiltreazaDupaUser(tabSelected, textDeCautat);
             }
+            
         }
 
         private void buttonCarteAdauga_Click(object sender, EventArgs e)
         {
             // la apasarea lui se va deschide un formular in care vor trebui introduse datele de adaugare a unei carti noi
-            InterfataIntroducereCarte interfata = new InterfataIntroducereCarte(this);
+            InterfataIntroducereCarte interfata = new InterfataIntroducereCarte(this, _controller);
             interfata.Show();
             this.Enabled = false;
         }
@@ -82,7 +116,8 @@ namespace InterfataAdmin
             {
                 //sterge carte
                 String carte = listBoxCarti.SelectedItem.ToString();
-                //...
+                int id = int.Parse(carte.Split(' ')[0]);
+                _controller.StergeCarte(id);
             }
             else
             {
@@ -97,7 +132,7 @@ namespace InterfataAdmin
             if(listBoxCarti.SelectedIndex != -1)
             {
                 String carte = listBoxCarti.SelectedItem.ToString();
-                InterataIntroducereStoc interata = new InterataIntroducereStoc(this, carte);
+                InterataIntroducereStoc interata = new InterataIntroducereStoc(this, carte,_controller);
                 interata.Show();
                 this.Enabled = false;
             }
@@ -115,7 +150,8 @@ namespace InterfataAdmin
             if (indice_selectat != -1)
             {
                 String cerere = listBoxCereri.SelectedItem.ToString();
-
+                int id = int.Parse(cerere.Split(' ')[0]);
+                _controller.AcceptaCerere(id);
                 // se accepta cererea
             }
             else
@@ -133,7 +169,8 @@ namespace InterfataAdmin
             if(indice_selectat != -1)
             {
                 String cerere = listBoxCereri.SelectedItem.ToString();
-
+                int id = int.Parse(cerere.Split(' ')[0]);
+                _controller.RespingeCerere(id);
                 // se respinge cererea
             }
             else
@@ -162,9 +199,8 @@ namespace InterfataAdmin
             {
                 // se ia si se afiseaza in dreapta informatii despre cerere
                 String cerere = listBoxCereri.SelectedItem.ToString();
-
-                //afisare info la dreapta
-                richTextBoxInformatii.Text = cerere;
+                int id = int.Parse(cerere.Split(' ')[0]);
+                _controller.InfoCerere(id);
             }
         }
 
@@ -174,10 +210,8 @@ namespace InterfataAdmin
             {
                 // se ia si se afiseaza in dreapta informatii despre utilizator
                 String utilizator = listBoxUtilizatori.SelectedItem.ToString();
-
-                //afisare info
-                richTextBoxInformatii.Text = utilizator;
-
+                int id = int.Parse(utilizator.Split(' ')[0]);
+                _controller.InfoUtilizator(id);
             }
         }
 
@@ -187,9 +221,8 @@ namespace InterfataAdmin
             {
                 // se ia si se afiseaza in chenarul din dreapta detalii despre imprumut
                 String imprumut = listBoxImprumuturi.SelectedItem.ToString();
-
-                // afisare informatie in dreapta
-                richTextBoxInformatii.Text = imprumut;
+                int id = int.Parse(imprumut.Split(' ')[0]);
+                _controller.InfoImprumut(id);
             }
         }
 
@@ -199,9 +232,8 @@ namespace InterfataAdmin
             if (listBoxCarti.SelectedIndex != -1)
             {
                 String carte = listBoxCarti.SelectedItem.ToString();
-
-                //afisare informatii
-                richTextBoxInformatii.Text = carte;
+                int id = int.Parse(carte.Split(' ')[0]);
+                _controller.InfoCarte(id);
             }
         }
 
@@ -250,6 +282,51 @@ namespace InterfataAdmin
                 groupBoxCerere.Enabled = true;
                 textBoxCauta.Text = "";
             }
+        }
+
+        public void PuneImprumutInLista(string imprumut)
+        {
+            listBoxImprumuturi.Items.Add(imprumut);
+        }
+
+        public void PuneUtilizatorInLista(string utilizator)
+        {
+            listBoxUtilizatori.Items.Add(utilizator);
+        }
+
+        public void PuneCerereInLista(string cerere)
+        {
+            listBoxCereri.Items.Add(cerere);
+        }
+
+        public void PuneCarteInLista(string carte)
+        {
+            listBoxCarti.Items.Add(carte);
+        }
+
+        public void Afiseaza(string text)
+        {
+            richTextBoxInformatii.Text = text;
+        }
+
+        public void CurataListaImprumut()
+        {
+            listBoxImprumuturi.Items.Clear();
+        }
+
+        public void CurataListaUtilizatori()
+        {
+            listBoxUtilizatori.Items.Clear();
+        }
+
+        public void CurataListaCereri()
+        {
+            listBoxCereri.Items.Clear();
+        }
+
+        public void CurataListaCarti()
+        {
+            listBoxCarti.Items.Clear();
         }
     }
 }

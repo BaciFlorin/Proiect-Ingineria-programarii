@@ -1,4 +1,15 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        InterfataIntroducereCarte.cs                             *
+ *  Copyright:   (c) 2020, Bacica Florin                                  *
+ *  E-mail:      florin.bacica@student.tuiasi.ro                          *
+ *  Description: Clasa care descriu felul cum se comporta interfata    *
+ *               de introducere a unei carti la actiunea                  *
+ *               utilizatorului.                                          *
+ *                                                                        *
+ **************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,14 +18,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Comune;
 
 namespace InterfataAdmin
 {
     public partial class InterfataIntroducereCarte : Form
     {
         private Form _parent;
-        public InterfataIntroducereCarte(Form parent)
+        private IControllerAdmin _controller;
+        public InterfataIntroducereCarte(Form parent, IControllerAdmin controller)
         {
+            _controller = controller;
             _parent = parent;
             InitializeComponent();
         }
@@ -43,12 +57,8 @@ namespace InterfataAdmin
                 MessageBox.Show("Introduceti un numar va rog!");
                 return;
             }
-            
 
-
-            // se fac niste verificari si daca acestea se trec se incearca introducerea in baza de date
-            // daca nu se reuseste se afiseaza mesajul de eroare
-            // daca se reuseste se paraseste interfata
+            _controller.AdaugaCarteNoua(titlu, autor, IBBN, descriere, categotie, stoc);
 
             if(true)
             {
