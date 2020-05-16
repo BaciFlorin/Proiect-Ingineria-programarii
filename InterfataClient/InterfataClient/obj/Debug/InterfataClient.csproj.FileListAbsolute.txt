@@ -12,3 +12,5 @@ D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\bin\Debug\Clien
 D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\bin\Debug\ClientController.pdb
 D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\obj\Debug\InterfataClient.csproj.CopyComplete
 D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\bin\Debug\System.Data.SQLite.dll
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\bin\Debug\Comune.dll
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\bin\Debug\Comune.pdb

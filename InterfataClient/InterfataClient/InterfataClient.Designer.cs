@@ -277,7 +277,7 @@
             this.groupBoxUser.Controls.Add(this.roundPictureBoxUser);
             this.groupBoxUser.Location = new System.Drawing.Point(629, 24);
             this.groupBoxUser.Name = "groupBoxUser";
-            this.groupBoxUser.Size = new System.Drawing.Size(302, 102);
+            this.groupBoxUser.Size = new System.Drawing.Size(319, 102);
             this.groupBoxUser.TabIndex = 7;
             this.groupBoxUser.TabStop = false;
             this.groupBoxUser.Text = "User";
@@ -288,16 +288,14 @@
             this.linkLabelUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelUsername.Location = new System.Drawing.Point(90, 42);
             this.linkLabelUsername.Name = "linkLabelUsername";
-            this.linkLabelUsername.Size = new System.Drawing.Size(77, 18);
+            this.linkLabelUsername.Size = new System.Drawing.Size(0, 18);
             this.linkLabelUsername.TabIndex = 2;
-            this.linkLabelUsername.TabStop = true;
-            this.linkLabelUsername.Text = "Username";
             this.linkLabelUsername.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelUsername_LinkClicked);
             // 
             // buttonLogOut
             // 
             this.buttonLogOut.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogOut.Image")));
-            this.buttonLogOut.Location = new System.Drawing.Point(212, 33);
+            this.buttonLogOut.Location = new System.Drawing.Point(255, 33);
             this.buttonLogOut.Name = "buttonLogOut";
             this.buttonLogOut.Size = new System.Drawing.Size(47, 39);
             this.buttonLogOut.TabIndex = 1;

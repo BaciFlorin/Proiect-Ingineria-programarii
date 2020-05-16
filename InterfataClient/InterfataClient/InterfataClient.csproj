@@ -112,6 +112,10 @@
       <Project>{ce55c3bf-20d1-4061-b8cc-89e7090b7005}</Project>
       <Name>ClientController</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Comune\Comune.csproj">
+      <Project>{2d042c82-72ef-4670-8ac1-3f2faaf0a1a4}</Project>
+      <Name>Comune</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Comune;
+using Controlere;
+
 
 namespace InterfataClient
 {
@@ -14,9 +17,13 @@ namespace InterfataClient
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InterfataUtilizator());
+            IClientView view = new InterfataUtilizator(1);
+            IClientController controller = new ClientController(view);
+            view.SetController(controller);
+            ((InterfataUtilizator)view).Start();
         }
     }
 }

@@ -1,35 +1,54 @@
 ﻿using System;
 using System.Windows.Forms;
 using Entitati;
-using Controllers;
+using Controlere;
+using Comune;
 using System.Collections.Generic;
+using System.Drawing;
 
 namespace InterfataClient
 {
-    public partial class InterfataUtilizator : Form
+    public partial class InterfataUtilizator : Form, IClientView
     {
         private int _loggedUserId;
         private List<Carte> _carti;
-        private List<Imprumut> _cartiImprumutate;
+        private List<Imprumut> _imprumuturi;
 
-        private ClientController _clientController = new ClientController();
+        private IClientController _clientController;
 
-        public InterfataUtilizator(/*int idUser*/)
+        public InterfataUtilizator(int idUser)
         {
-            //_loggedUserId = idUser;
+           _loggedUserId = idUser;
             InitializeComponent();
-            toolTipLogOut.SetToolTip(buttonLogOut, "LogOut");
+            
         }
 
+        public void SetController(IClientController clientController)
+        {
+            _clientController = clientController;
+        }
+
+
+        public void Start()
+        {
+            _clientController.ObtinePathPozaUser(_loggedUserId);
+            _clientController.ObtineUsername(_loggedUserId);
+            toolTipLogOut.SetToolTip(buttonLogOut, "LogOut");
+            Application.EnableVisualStyles();
+            Application.Run(this);
+           
+
+        }
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            //log out
             this.Close();
         }
 
         private void tabControlBooks_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(tabControlBooks.SelectedIndex==0)
+            ClearDetalii();
+
+            if (tabControlBooks.SelectedIndex==0)
             {
                 buttonReturn.Enabled = false;
                 buttonBorrow.Enabled = true;
@@ -67,29 +86,11 @@ namespace InterfataClient
             }
             if (tabControlBooks.SelectedIndex == 0)
             {
-                _carti = _clientController.ObtineCarti(tipFiltru, filtru);
-
-                System.Object[] items = new System.Object[_carti.Count];
-                for (int i = 0; i < _carti.Count; ++i)
-                {
-                    items[i] = _carti[i].Id + ". " + _carti[i].Titlu + "-" + _carti[i].Autor + "\n";
-                }
-
-                listBoxCartiDisponibile.Items.Clear();
-                listBoxCartiDisponibile.Items.AddRange(items);
+               _clientController.ObtineCarti(tipFiltru, filtru);
             }
             else
             {
-                _cartiImprumutate = _clientController.ObtineImprumuturi(tipFiltru, filtru);
-                System.Object[] items = new System.Object[_cartiImprumutate.Count];
-                for (int i = 0; i < _cartiImprumutate.Count; ++i)
-                {
-                    items[i] = _cartiImprumutate[i].IdCarte + " " + _cartiImprumutate[i].DataImprumut + " " +
-                        _cartiImprumutate[i].DataRestituire + "\n";
-                }
-
-                listBoxCartiImprumutate.Items.Clear();
-                listBoxCartiImprumutate.Items.AddRange(items);
+                _clientController.ObtineImprumuturi(tipFiltru, filtru);
             }
 
         }
@@ -110,7 +111,7 @@ namespace InterfataClient
             if (listBoxCartiImprumutate.Items.Count > 0)
             {
                 int index = listBoxCartiImprumutate.SelectedIndex;
-                Imprumut imprumut = _cartiImprumutate[index];
+                Imprumut imprumut = _imprumuturi[index];
                 _clientController.ReturneazaCarte(imprumut);
             }
         }
@@ -128,32 +129,77 @@ namespace InterfataClient
 
         private void listBoxCartiImprumutate_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBoxCartiImprumutate.Items.Count > 0)
-            {
-                int index = listBoxCartiImprumutate.SelectedIndex;
-
-                richTextBoxDetails.Text = _clientController.DetaliiImprumut(_cartiImprumutate[index].IdImprumut);
-            }
+            int index = listBoxCartiImprumutate.SelectedIndex;
+            _clientController.DetaliiImprumut(_imprumuturi[index].IdImprumut);
+            
         }
 
         private void listBoxCartiDisponibile_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBoxCartiDisponibile.Items.Count > 0)
-            {
-                int index = listBoxCartiDisponibile.SelectedIndex;
-                String bookInfo = _clientController.DetaliiCarte(_carti[index]);
-                richTextBoxDetails.Text = bookInfo;
-            }
+            int index = listBoxCartiDisponibile.SelectedIndex;
+            _clientController.DetaliiCarte(_carti[index]);
+            
         }
 
         private void linkLabelUsername_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //to do
-            //afisare intr-o noua fereastra a informatiilor utilizatorului
+            _clientController.DetaliiUser(_loggedUserId);
+        }
 
-            //preluare informatii si depundere in userInfo
-            String userInfo = "Info";
-            MessageBox.Show(userInfo, "Informații despre utilizator");
+        public void AfiseazaDetalii(string detalii)
+        {
+            richTextBoxDetails.Text = detalii;
+        }
+        public void AfiseazaDetaliiUtlizator(string detalii)
+        {
+            MessageBox.Show(detalii, "Informații despre utilizator");
+        }
+
+        public void AfiseazaImprumuturi()
+        {
+            System.Object[] items = new System.Object[_imprumuturi.Count];
+            for (int i = 0; i < _imprumuturi.Count; ++i)
+            {
+                items[i] = _imprumuturi[i].IdCarte + " " + _imprumuturi[i].DataImprumut + " " +
+                    _imprumuturi[i].DataRestituire + "\n";
+            }
+
+            listBoxCartiImprumutate.Items.Clear();
+            listBoxCartiImprumutate.Items.AddRange(items);
+        }
+        public void AfiseazaCarti()
+        {
+            System.Object[] items = new System.Object[_carti.Count];
+            for (int i = 0; i < _carti.Count; ++i)
+            {
+                items[i] = _carti[i].Id + ". " + _carti[i].Titlu + "-" + _carti[i].Autor + "\n";
+            }
+
+            listBoxCartiDisponibile.Items.Clear();
+            listBoxCartiDisponibile.Items.AddRange(items);
+        }
+
+        public void SeteazaListaImprumuturi(List<Imprumut> imprumuturi)
+        {
+            _imprumuturi = imprumuturi;
+        }
+        public void SeteazaListaCarti(List<Carte> carti)
+        {
+            _carti = carti;
+        }
+
+        public void SeteazaPozaUser(string path)
+        {
+            //roundPictureBoxUser.Image = Image.FromFile(path);
+        }
+        public void SeteazaUsername(string username)
+        {
+            linkLabelUsername.Text = username;
+        }
+
+        public void ClearDetalii()
+        {
+            richTextBoxDetails.Clear();
         }
     }
 }
