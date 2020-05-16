@@ -1,26 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entitati;
+using Controllers;
+using System.Collections.Generic;
 
 namespace InterfataClient
 {
     public partial class InterfataUtilizator : Form
     {
-     
-        public InterfataUtilizator()
+        private int _loggedUserId;
+        private List<Carte> _carti;
+        private List<Imprumut> _cartiImprumutate;
+
+        private ClientController _clientController = new ClientController();
+
+        public InterfataUtilizator(/*int idUser*/)
         {
+            //_loggedUserId = idUser;
             InitializeComponent();
             toolTipLogOut.SetToolTip(buttonLogOut, "LogOut");
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
+            //log out
             this.Close();
         }
 
@@ -40,22 +43,53 @@ namespace InterfataClient
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-
+            TipFiltru tipFiltru;
+            string filtru;
             if (radioBttnAuthor.Checked)
             {
-                //apel search cu filtru autor
+                filtru = textBoxSearch.Text;
+                tipFiltru = TipFiltru.Autor;
             }
             else if (radioBttnTitle.Checked)
             {
-                //apel search cu filtru titlu
+                filtru = textBoxSearch.Text;
+                tipFiltru = TipFiltru.Titlu;
             }
             else if (radioBttnGender.Checked)
             {
-                //apel search cu filtru gen
+                filtru = textBoxSearch.Text;
+                tipFiltru = TipFiltru.Categorie;
             }
             else
             {
-                //apel search fara filtru
+                tipFiltru = TipFiltru.None;
+                filtru = "";
+            }
+            if (tabControlBooks.SelectedIndex == 0)
+            {
+                _carti = _clientController.ObtineCarti(tipFiltru, filtru);
+
+                System.Object[] items = new System.Object[_carti.Count];
+                for (int i = 0; i < _carti.Count; ++i)
+                {
+                    items[i] = _carti[i].Id + ". " + _carti[i].Titlu + "-" + _carti[i].Autor + "\n";
+                }
+
+                listBoxCartiDisponibile.Items.Clear();
+                listBoxCartiDisponibile.Items.AddRange(items);
+            }
+            else
+            {
+                _cartiImprumutate = _clientController.ObtineImprumuturi(tipFiltru, filtru);
+                System.Object[] items = new System.Object[_cartiImprumutate.Count];
+                for (int i = 0; i < _cartiImprumutate.Count; ++i)
+                {
+                    items[i] = _cartiImprumutate[i].IdCarte + " " + _cartiImprumutate[i].DataImprumut + " " +
+                        _cartiImprumutate[i].DataRestituire + "\n";
+                }
+
+                listBoxCartiImprumutate.Items.Clear();
+                listBoxCartiImprumutate.Items.AddRange(items);
             }
 
         }
@@ -63,14 +97,22 @@ namespace InterfataClient
        
         private void buttonBorrow_Click(object sender, EventArgs e)
         {
-            //get selected book
-            //creare cerere de imprumut carte daca aceasta nu este imprumutata deja
+            if (listBoxCartiDisponibile.Items.Count > 0)
+            {
+                int index = listBoxCartiDisponibile.SelectedIndex;
+                Carte carte = _carti[index];
+                _clientController.AdaugaImprumut(carte, _loggedUserId);
+            }
         }
 
         private void buttonReturn_Click(object sender, EventArgs e)
         {
-            //get selected book
-            //creare cerere de restituire carte
+            if (listBoxCartiImprumutate.Items.Count > 0)
+            {
+                int index = listBoxCartiImprumutate.SelectedIndex;
+                Imprumut imprumut = _cartiImprumutate[index];
+                _clientController.ReturneazaCarte(imprumut);
+            }
         }
 
         private void buttonLogOut_Click(object sender, EventArgs e)
@@ -80,21 +122,28 @@ namespace InterfataClient
             {
                 //log out
                 //open login ui
+                this.Close();
             }
         }
 
         private void listBoxCartiImprumutate_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //getbookinfo and place it in bookInfo
-            String bookInfo = "";
-            richTextBoxDetails.Text = bookInfo;
+            if (listBoxCartiImprumutate.Items.Count > 0)
+            {
+                int index = listBoxCartiImprumutate.SelectedIndex;
+
+                richTextBoxDetails.Text = _clientController.DetaliiImprumut(_cartiImprumutate[index].IdImprumut);
+            }
         }
 
         private void listBoxCartiDisponibile_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //getbookinfo
-            String bookInfo = "";
-            richTextBoxDetails.Text = bookInfo;
+            if (listBoxCartiDisponibile.Items.Count > 0)
+            {
+                int index = listBoxCartiDisponibile.SelectedIndex;
+                String bookInfo = _clientController.DetaliiCarte(_carti[index]);
+                richTextBoxDetails.Text = bookInfo;
+            }
         }
 
         private void linkLabelUsername_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -105,7 +154,6 @@ namespace InterfataClient
             //preluare informatii si depundere in userInfo
             String userInfo = "Info";
             MessageBox.Show(userInfo, "Informații despre utilizator");
-
         }
     }
 }

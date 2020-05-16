@@ -8,3 +8,7 @@ D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\bin\Debug\Inter
 D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\obj\Debug\InterfataClient.exe
 D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\obj\Debug\InterfataClient.pdb
 D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\obj\Debug\InterfataClient.InterfataUtilizator.resources
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\bin\Debug\ClientController.dll
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\bin\Debug\ClientController.pdb
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\obj\Debug\InterfataClient.csproj.CopyComplete
+D:\facultate\An3\sem2\ip_proiect\InterfataClient\InterfataClient\bin\Debug\System.Data.SQLite.dll

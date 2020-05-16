@@ -33,6 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DLLdatabase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DLLdatabase.dll</HintPath>
+    </Reference>
+    <Reference Include="DLLentitati, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DLLentitati.dll</HintPath>
+    </Reference>
+    <Reference Include="DLLoperatii, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DLLoperatii.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -94,6 +106,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\images\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClientController\ClientController.csproj">
+      <Project>{ce55c3bf-20d1-4061-b8cc-89e7090b7005}</Project>
+      <Name>ClientController</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

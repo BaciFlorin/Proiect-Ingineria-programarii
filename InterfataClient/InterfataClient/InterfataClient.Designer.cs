@@ -221,9 +221,9 @@
             // 
             this.listBoxCartiDisponibile.FormattingEnabled = true;
             this.listBoxCartiDisponibile.ItemHeight = 18;
-            this.listBoxCartiDisponibile.Location = new System.Drawing.Point(-24, -34);
+            this.listBoxCartiDisponibile.Location = new System.Drawing.Point(6, 6);
             this.listBoxCartiDisponibile.Name = "listBoxCartiDisponibile";
-            this.listBoxCartiDisponibile.Size = new System.Drawing.Size(437, 490);
+            this.listBoxCartiDisponibile.Size = new System.Drawing.Size(397, 436);
             this.listBoxCartiDisponibile.TabIndex = 0;
             this.listBoxCartiDisponibile.SelectedIndexChanged += new System.EventHandler(this.listBoxCartiDisponibile_SelectedIndexChanged);
             // 
@@ -243,9 +243,9 @@
             // 
             this.listBoxCartiImprumutate.FormattingEnabled = true;
             this.listBoxCartiImprumutate.ItemHeight = 18;
-            this.listBoxCartiImprumutate.Location = new System.Drawing.Point(-4, -15);
+            this.listBoxCartiImprumutate.Location = new System.Drawing.Point(3, 3);
             this.listBoxCartiImprumutate.Name = "listBoxCartiImprumutate";
-            this.listBoxCartiImprumutate.Size = new System.Drawing.Size(427, 472);
+            this.listBoxCartiImprumutate.Size = new System.Drawing.Size(400, 436);
             this.listBoxCartiImprumutate.TabIndex = 0;
             this.listBoxCartiImprumutate.SelectedIndexChanged += new System.EventHandler(this.listBoxCartiImprumutate_SelectedIndexChanged);
             // 
