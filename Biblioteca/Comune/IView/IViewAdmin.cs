@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        IViewAdmin.cs                                            *
+ *  Copyright:   (c) 2020, Bacica Florin                                  *
+ *  E-mail:      florin.bacica@student.tuias.ro                           *
+ *  Description: Interfata View-ului.                                     *
+ *                                                                        *
+ **************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

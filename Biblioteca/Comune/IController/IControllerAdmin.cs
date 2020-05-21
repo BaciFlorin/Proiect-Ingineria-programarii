@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        IContollerAdmin.cs                                       *
+ *  Copyright:   (c) 2020, Bacica Florin                                  *
+ *  E-mail:      florin.bacica@student.tuias.ro                           *
+ *  Description: Interfata Controlerului.                                 *
+ *                                                                        *
+ **************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
