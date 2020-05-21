@@ -16,3 +16,42 @@ D:\facultate\An3\sem2\final\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.Co
 D:\facultate\An3\sem2\final\Biblioteca\Biblioteca\bin\Debug\Interfete.dll
 D:\facultate\An3\sem2\final\Biblioteca\Biblioteca\bin\Debug\Interfete.pdb
 D:\facultate\An3\sem2\final\Biblioteca\Biblioteca\bin\Debug\Interfete.dll.config
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Interfete.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\System.Data.SQLite.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Interfete.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Interfete.dll.config
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Comune.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Controlere.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\DLLdatabase.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\DLLdatabase.dll.config
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csprojAssemblyReference.cache
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Properties.Resources.resources
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateResource.cache
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CopyComplete
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Comune.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Controlere.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\DLLdatabase.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Interfete.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\System.Data.SQLite.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Comune.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Controlere.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\DLLdatabase.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\DLLdatabase.dll.config
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Interfete.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Interfete.dll.config
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csprojAssemblyReference.cache
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Properties.Resources.resources
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateResource.cache
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CopyComplete
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb

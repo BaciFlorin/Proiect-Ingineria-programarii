@@ -33,18 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Comune, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Comune.dll</HintPath>
-    </Reference>
-    <Reference Include="Controlere, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Controlere.dll</HintPath>
-    </Reference>
-    <Reference Include="DLLdatabase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\DLLdatabase.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -83,6 +71,18 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Comune\Comune.csproj">
+      <Project>{2d042c82-72ef-4670-8ac1-3f2faaf0a1a4}</Project>
+      <Name>Comune</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controlere\Controlere.csproj">
+      <Project>{47f1e1b1-d7dc-468c-a876-fe97bd7e8b40}</Project>
+      <Name>Controlere</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLLdatabase\DLLdatabase.csproj">
+      <Project>{774289aa-e730-43ee-ad1d-cb17e1f37fa5}</Project>
+      <Name>DLLdatabase</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Interfete\Interfete.csproj">
       <Project>{b6d4907c-4d0a-4b20-be95-f7ec11a04a9e}</Project>
       <Name>Interfete</Name>

@@ -20,6 +20,18 @@ namespace InterfataAdmin
         private String _carte;
         private IControllerAdmin _controller;
 
+        /// <summary>
+        /// Constructor clasa
+        /// </summary>
+        /// <param name="parent">
+        /// Fereastra parinte care imi creaza aceasta interfata
+        /// </param>
+        /// <param name="carte">
+        /// Cartea pentru care se introduce stoc nou
+        /// </param>
+        /// <param name="controller">
+        /// Controllerul clasei care are grija de executia operatiilor
+        /// </param>
         public InterataIntroducereStoc(Form parent, String carte, IControllerAdmin controller)
         {
             _carte = carte;

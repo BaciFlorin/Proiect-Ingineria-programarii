@@ -64,3 +64,24 @@ D:\facultate\An3\sem2\final\Biblioteca\DLLdatabase\bin\Debug\System.Data.SQLite.
 D:\facultate\An3\sem2\final\Biblioteca\DLLdatabase\bin\Debug\System.Data.SQLite.EF6.dll
 D:\facultate\An3\sem2\final\Biblioteca\DLLdatabase\bin\Debug\System.Data.SQLite.Linq.dll
 D:\facultate\An3\sem2\final\Biblioteca\DLLdatabase\obj\Debug\DLLdatabase.csproj.CopyComplete
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\DLLdatabase\bin\Debug\DLLdatabase.dll.config
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\DLLdatabase\bin\Debug\DLLdatabase.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\DLLdatabase\bin\Debug\DLLdatabase.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\DLLdatabase\bin\Debug\System.Data.SQLite.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\DLLdatabase\obj\Debug\DLLdatabase.csprojAssemblyReference.cache
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\DLLdatabase\obj\Debug\DLLdatabase.csproj.CoreCompileInputs.cache
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\DLLdatabase\obj\Debug\DLLdatabase.csproj.CopyComplete
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\DLLdatabase\obj\Debug\DLLdatabase.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\DLLdatabase\obj\Debug\DLLdatabase.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\DLLdatabase\bin\Debug\DLLdatabase.dll.config
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\DLLdatabase\bin\Debug\DLLdatabase.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\DLLdatabase\bin\Debug\DLLdatabase.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\DLLdatabase\bin\Debug\EntityFramework.SqlServer.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\DLLdatabase\bin\Debug\EntityFramework.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\DLLdatabase\bin\Debug\System.Data.SQLite.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\DLLdatabase\bin\Debug\System.Data.SQLite.EF6.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\DLLdatabase\bin\Debug\System.Data.SQLite.Linq.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\DLLdatabase\obj\Debug\DLLdatabase.csproj.CoreCompileInputs.cache
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\DLLdatabase\obj\Debug\DLLdatabase.csproj.CopyComplete
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\DLLdatabase\obj\Debug\DLLdatabase.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\DLLdatabase\obj\Debug\DLLdatabase.pdb

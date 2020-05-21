@@ -8,16 +8,16 @@ namespace Comune
 {
     public interface IControllerAdmin
     {
-        void AdaugaCartiInStoc(int id, int numarCarti);
+        bool AdaugaCartiInStoc(int id, int numarCarti);
         void FiltreazaDupaAutor(int tab, string text);
         void FiltreazaDupaUser(int tab, string text);
         void FiltreazaDupaGen(int tab, string text);
         void FiltreazaDupaTitlu(int tab, string text);
         void AfiseazaToate(int tab);
-        void StergeCarte(int id);
-        void AcceptaCerere(int id);
-        void AdaugaCarteNoua(string titlu, string autor, string IBSN, string descriere, string categotie, int stoc);
-        void RespingeCerere(int id);
+        bool StergeCarte(int id);
+        bool AcceptaCerere(int id);
+        bool AdaugaCarteNoua(string titlu, string autor, string IBSN, string descriere, string categotie, int stoc);
+        bool RespingeCerere(int id);
         void InfoCerere(int id);
         void InfoUtilizator(int id);
         void InfoImprumut(int id);

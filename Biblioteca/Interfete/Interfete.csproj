@@ -134,6 +134,9 @@
     <None Include="Resources\default.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Comune\Comune.csproj">
       <Project>{2d042c82-72ef-4670-8ac1-3f2faaf0a1a4}</Project>
       <Name>Comune</Name>
@@ -146,9 +149,6 @@
       <Project>{774289aa-e730-43ee-ad1d-cb17e1f37fa5}</Project>
       <Name>DLLdatabase</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

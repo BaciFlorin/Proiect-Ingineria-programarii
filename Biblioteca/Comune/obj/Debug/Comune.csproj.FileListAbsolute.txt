@@ -33,3 +33,25 @@ D:\facultate\An3\sem2\final\Biblioteca\Comune\bin\Debug\DLLdatabase.pdb
 D:\facultate\An3\sem2\final\Biblioteca\Comune\bin\Debug\DLLdatabase.dll.config
 D:\facultate\An3\sem2\final\Biblioteca\Comune\bin\Debug\System.Data.SQLite.xml
 D:\facultate\An3\sem2\final\Biblioteca\Comune\bin\Debug\System.Data.SQLite.dll.config
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Comune\bin\Debug\Comune.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Comune\bin\Debug\Comune.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Comune\bin\Debug\DLLdatabase.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Comune\bin\Debug\System.Data.SQLite.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Comune\bin\Debug\DLLdatabase.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Comune\bin\Debug\DLLdatabase.dll.config
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Comune\obj\Debug\Comune.csprojAssemblyReference.cache
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Comune\obj\Debug\Comune.csproj.CoreCompileInputs.cache
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Comune\obj\Debug\Comune.csproj.CopyComplete
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Comune\obj\Debug\Comune.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\04_Proiect\Proiect_IP\Biblioteca\Comune\obj\Debug\Comune.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Comune\bin\Debug\Comune.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Comune\bin\Debug\Comune.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Comune\bin\Debug\DLLdatabase.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Comune\bin\Debug\System.Data.SQLite.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Comune\bin\Debug\DLLdatabase.pdb
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Comune\bin\Debug\DLLdatabase.dll.config
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Comune\obj\Debug\Comune.csprojAssemblyReference.cache
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Comune\obj\Debug\Comune.csproj.CoreCompileInputs.cache
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Comune\obj\Debug\Comune.csproj.CopyComplete
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Comune\obj\Debug\Comune.dll
+F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Comune\obj\Debug\Comune.pdb

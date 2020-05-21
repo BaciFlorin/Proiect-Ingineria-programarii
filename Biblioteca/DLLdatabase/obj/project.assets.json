@@ -438,20 +438,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\d\\.nuget\\packages\\": {}
+    "C:\\Users\\BacicaFlorin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\facultate\\An3\\sem2\\final\\Biblioteca\\DLLdatabase\\DLLdatabase.csproj",
+      "projectUniqueName": "F:\\Work time\\Facultate\\an3-semestrul 2\\Ingineria programării\\06_Proiect\\Proiect_IP\\Biblioteca\\DLLdatabase\\DLLdatabase.csproj",
       "projectName": "DLLdatabase",
-      "projectPath": "D:\\facultate\\An3\\sem2\\final\\Biblioteca\\DLLdatabase\\DLLdatabase.csproj",
-      "packagesPath": "C:\\Users\\d\\.nuget\\packages\\",
-      "outputPath": "D:\\facultate\\An3\\sem2\\final\\Biblioteca\\DLLdatabase\\obj\\",
+      "projectPath": "F:\\Work time\\Facultate\\an3-semestrul 2\\Ingineria programării\\06_Proiect\\Proiect_IP\\Biblioteca\\DLLdatabase\\DLLdatabase.csproj",
+      "packagesPath": "C:\\Users\\BacicaFlorin\\.nuget\\packages\\",
+      "outputPath": "F:\\Work time\\Facultate\\an3-semestrul 2\\Ingineria programării\\06_Proiect\\Proiect_IP\\Biblioteca\\DLLdatabase\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\d\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\BacicaFlorin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
