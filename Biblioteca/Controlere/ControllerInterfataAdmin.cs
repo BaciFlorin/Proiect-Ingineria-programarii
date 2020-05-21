@@ -239,11 +239,11 @@ namespace Controlere
             {
                 return u.ID == cerere.ID_User;
             });
-            _view.Afiseaza("ID:\t" + cerere.ID.ToString() + "\n" +
-                "Titlu carte:\t" + carte.Titlu + "\n" +
-                "Autor carte:\t" + carte.Autor + "\n" +
-                "Nume user:\t" + user.User_name + "\n" +
-                "Tip cerere:\t" + cerere.Tip_cerere
+            _view.Afiseaza("ID:" + cerere.ID.ToString() + "\n" +
+                "Titlu carte:" + carte.Titlu + "\n" +
+                "Autor carte:" + carte.Autor + "\n" +
+                "Nume user:" + user.User_name + "\n" +
+                "Tip cerere:" + cerere.Tip_cerere
             );
         }
 
@@ -264,13 +264,13 @@ namespace Controlere
             {
                 return u.ID == imprumut.IdUser;
             });
-            _view.Afiseaza("ID:\t" + imprumut.IdImprumut.ToString() + "\n" +
-                "Titlu carte:\t" + carte.Titlu + "\n" +
-                "Autor carte:\t" + carte.Autor + "\n" +
-                "Nume user:\t" + user.User_name + "\n" +
-                "Data imprumut:\t" + imprumut.DataImprumut.ToString() + "\n" +
-                "Data restituire\t" + imprumut.DataRestituire.ToString() + "\n" +
-                "Zile ramase:\t" + (imprumut.DataRestituire - imprumut.DataImprumut).TotalDays.ToString()
+            _view.Afiseaza("ID:" + imprumut.IdImprumut.ToString() + "\n" +
+                "Titlu carte:" + carte.Titlu + "\n" +
+                "Autor carte:" + carte.Autor + "\n" +
+                "Nume user:" + user.User_name + "\n" +
+                "Data imprumut:" + imprumut.DataImprumut.ToString() + "\n" +
+                "Data restituire" + imprumut.DataRestituire.ToString() + "\n" +
+                "Zile ramase:" + (imprumut.DataRestituire - imprumut.DataImprumut).TotalDays.ToString()
             );
         }
 
@@ -284,12 +284,12 @@ namespace Controlere
                 return usr.ID == id;
             });
             Persoana persoana = _persoane.SelecteazaPersoanaDupaID(id)[0];
-            _view.Afiseaza("Username:\t" + user.User_name + "\n" +
-                "Nume:\t" + persoana.Nume + "\n" +
-                "Prenume:\t" + persoana.Prenume + "\n" +
-                "Telefon:\t" + persoana.Telefon + "\n" +
-                "Adresa:\t" + persoana.Adresa + "\n" +
-                "Email:\t" + persoana.Email
+            _view.Afiseaza("Username:" + user.User_name + "\n" +
+                "Nume:" + persoana.Nume + "\n" +
+                "Prenume:" + persoana.Prenume + "\n" +
+                "Telefon:" + persoana.Telefon + "\n" +
+                "Adresa:" + persoana.Adresa + "\n" +
+                "Email:" + persoana.Email
             );
         }
 
@@ -377,7 +377,7 @@ namespace Controlere
                 {
                     return usr.ID == imp.IdUser;
                 });
-                _view.PuneImprumutInLista("ID:" + imp.IdImprumut.ToString() + " Tilu carte:" + carte.Titlu + " Username:" + user.User_name);
+                _view.PuneImprumutInLista("ID:" + imp.IdImprumut.ToString() + " Titlu carte:" + carte.Titlu + " Username:" + user.User_name);
             });
         }
 
@@ -423,7 +423,7 @@ namespace Controlere
             _view.CurataListaCarti();
             carti.ForEach((Carte carte) =>
             {
-                _view.PuneCarteInLista("ID:" + carte.Id.ToString() + " Tit:" + carte.Titlu + " Stoc:" + carte.Stoc.ToString());
+                _view.PuneCarteInLista("ID:" + carte.Id.ToString() + " Titlu:" + carte.Titlu + " Stoc:" + carte.Stoc.ToString());
             });
         }
 
