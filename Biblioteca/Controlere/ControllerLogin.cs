@@ -1,7 +1,8 @@
 ﻿using Entitati;
 using Operatii;
+using Comune;
 
-namespace Login
+namespace Controlere
 {
     public class ControllerLogin : IControllerLogin
     {

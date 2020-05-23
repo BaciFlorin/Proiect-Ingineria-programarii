@@ -4,8 +4,9 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Linq;
 using System.IO;
+using Comune;
 
-namespace Login
+namespace Interfete
 {
     public partial class Creeaza_un_cont : Form, IViewSignup
     {

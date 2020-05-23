@@ -13,7 +13,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using Comune;
 
-namespace InterfataAdmin
+namespace Interfete
 {
     public partial class InterfataBibliotecar : Form, IViewAdmin
     {

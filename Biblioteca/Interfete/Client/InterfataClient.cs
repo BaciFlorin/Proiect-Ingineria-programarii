@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 
-namespace InterfataClient
+namespace Interfete
 {
     public partial class InterfataUtilizator : Form, IClientView
     {

@@ -12,7 +12,7 @@ using System;
 using System.Windows.Forms;
 using Comune;
 
-namespace InterfataAdmin
+namespace Interfete
 {
     public partial class InterataIntroducereStoc : Form
     {

@@ -1,6 +1,6 @@
 ﻿using Entitati;
 
-namespace Login
+namespace Comune
 {
     public interface IControllerLogin
     {

@@ -1,4 +1,4 @@
-﻿namespace InterfataAdmin
+﻿namespace Interfete
 {
     partial class InterfataIntroducereCarte
     {

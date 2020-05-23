@@ -1,4 +1,4 @@
-﻿namespace Login
+﻿namespace Interfete
 {
     partial class Autentificare
     {

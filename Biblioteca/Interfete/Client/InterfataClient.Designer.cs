@@ -1,4 +1,4 @@
-﻿namespace InterfataClient
+﻿namespace Interfete
 {
     partial class InterfataUtilizator
     {

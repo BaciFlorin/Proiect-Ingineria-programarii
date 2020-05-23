@@ -1,4 +1,4 @@
-﻿namespace Login
+﻿namespace Comune
 {
     public interface IViewLogin
     {

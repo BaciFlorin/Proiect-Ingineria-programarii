@@ -1,12 +1,10 @@
 ﻿using Comune;
 using Controlere;
 using Entitati;
-using InterfataAdmin;
-using InterfataClient;
 using System;
 using System.Windows.Forms;
 
-namespace Login
+namespace Interfete
 {
     public partial class Autentificare : Form, IViewLogin
     {

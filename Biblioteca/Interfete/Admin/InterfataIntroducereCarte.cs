@@ -20,7 +20,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Comune;
 
-namespace InterfataAdmin
+namespace Interfete
 {
     public partial class InterfataIntroducereCarte : Form
     {
