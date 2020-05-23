@@ -55,3 +55,24 @@ F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect
 F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CopyComplete
 F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
 F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Biblioteca.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Comune.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Controlere.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\DLLdatabase.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Interfete.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\System.Data.SQLite.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Comune.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Controlere.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\DLLdatabase.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\DLLdatabase.dll.config
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Interfete.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\bin\Debug\Interfete.dll.config
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csprojAssemblyReference.cache
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.Properties.Resources.resources
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.GenerateResource.cache
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.csproj.CopyComplete
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb

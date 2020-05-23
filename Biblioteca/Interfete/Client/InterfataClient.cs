@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        InterfataClient.cs                                       *
+ *  Copyright:   (c) 2020, Atomei Georgiana                               *
+ *  E-mail:      georgiana.atomei@student.tuiasi.ro                       *
+ *  Description: Interfata dispusa pentru utilizator                      *
+ *                                                                        *
+ **************************************************************************/
+
+using System;
 using System.Windows.Forms;
 using Entitati;
 using Comune;
@@ -14,6 +23,9 @@ namespace InterfataClient
         private List<Carte> _carti;
         private List<Imprumut> _imprumuturi;
 
+        /// <summary>
+        /// Referinta catre controller
+        /// </summary>
         private IClientController _clientController;
 
         private const int CP_NOCLOSE_BUTTON = 0x200;
@@ -28,6 +40,10 @@ namespace InterfataClient
             }
         }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="idUser"></param>
         public InterfataUtilizator(int idUser)
         {
             _loggedUserId = idUser;
@@ -35,12 +51,18 @@ namespace InterfataClient
 
         }
 
+        /// <summary>
+        /// Setarea referintei catre controllerul interfetei
+        /// </summary>
+        /// <param name="clientController"></param>
         public void SetController(IClientController clientController)
         {
             _clientController = clientController;
         }
 
-
+        /// <summary>
+        /// Initializare si pornire interafata client
+        /// </summary>
         public void Start()
         {
             
@@ -173,6 +195,9 @@ namespace InterfataClient
             MessageBox.Show(detalii, "Informații despre utilizator");
         }
 
+        /// <summary>
+        /// Afisarea listei cartilor imprumutate
+        /// </summary>
         public void AfiseazaImprumuturi()
         {
             System.Object[] items = new System.Object[_imprumuturi.Count];
@@ -185,6 +210,10 @@ namespace InterfataClient
             listBoxCartiImprumutate.Items.Clear();
             listBoxCartiImprumutate.Items.AddRange(items);
         }
+
+        /// <summary>
+        /// Afisarea listei cartilor
+        /// </summary>
         public void AfiseazaCarti()
         {
             System.Object[] items = new System.Object[_carti.Count];
@@ -200,11 +229,16 @@ namespace InterfataClient
         {
             _imprumuturi = imprumuturi;
         }
+
         public void SeteazaListaCarti(List<Carte> carti)
         {
             _carti = carti;
         }
 
+        /// <summary>
+        /// Afisarea pozei utilizatorului logat
+        /// </summary>
+        /// <param name="path"></param>
         public void SeteazaPozaUser(string path)
         {
             if (path != "")
@@ -214,6 +248,11 @@ namespace InterfataClient
                 roundPictureBoxUser.Image = Image.FromFile(imagesPath);
             }
         }
+
+        /// <summary>
+        /// Setarea username-ului
+        /// </summary>
+        /// <param name="username"></param>
         public void SeteazaUsername(string username)
         {
             linkLabelUsername.Text = username;
@@ -223,6 +262,11 @@ namespace InterfataClient
         {
             richTextBoxDetails.Clear();
         }
+
+        /// <summary>
+        /// Afisarea unui mesaj setat in controller
+        /// </summary>
+        /// <param name="msg"></param>
         public void AfiseazaMesaj(string msg)
         {
             MessageBox.Show(msg, "Info");

@@ -46,3 +46,16 @@ F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect
 F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Controlere\obj\Debug\Controlere.csproj.CopyComplete
 F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Controlere\obj\Debug\Controlere.dll
 F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Controlere\obj\Debug\Controlere.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Controlere\bin\Debug\Controlere.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Controlere\bin\Debug\Controlere.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Controlere\bin\Debug\Comune.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Controlere\bin\Debug\DLLdatabase.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Controlere\bin\Debug\System.Data.SQLite.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Controlere\bin\Debug\Comune.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Controlere\bin\Debug\DLLdatabase.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Controlere\bin\Debug\DLLdatabase.dll.config
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Controlere\obj\Debug\Controlere.csprojAssemblyReference.cache
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Controlere\obj\Debug\Controlere.csproj.CoreCompileInputs.cache
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Controlere\obj\Debug\Controlere.csproj.CopyComplete
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Controlere\obj\Debug\Controlere.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Controlere\obj\Debug\Controlere.pdb

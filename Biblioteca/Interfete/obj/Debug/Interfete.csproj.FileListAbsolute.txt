@@ -94,3 +94,27 @@ F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect
 F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Interfete\obj\Debug\Interfete.csproj.CopyComplete
 F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Interfete\obj\Debug\Interfete.dll
 F:\Work time\Facultate\an3-semestrul 2\Ingineria programării\06_Proiect\Proiect_IP\Biblioteca\Interfete\obj\Debug\Interfete.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\bin\Debug\Interfete.dll.config
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\bin\Debug\Interfete.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\bin\Debug\Interfete.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\bin\Debug\Comune.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\bin\Debug\Controlere.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\bin\Debug\DLLdatabase.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\bin\Debug\System.Data.SQLite.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\bin\Debug\Comune.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\bin\Debug\Controlere.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\bin\Debug\DLLdatabase.pdb
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\bin\Debug\DLLdatabase.dll.config
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\obj\Debug\Interfete.csprojAssemblyReference.cache
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\obj\Debug\InterfataAdmin.InterataIntroducereStoc.resources
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\obj\Debug\InterfataAdmin.InterfataBibliotecar.resources
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\obj\Debug\InterfataClient.InterfataUtilizator.resources
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\obj\Debug\InterfataAdmin.InterfataIntroducereCarte.resources
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\obj\Debug\Login.Autentificare.resources
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\obj\Debug\Login.Creeaza_un_cont.resources
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\obj\Debug\InterfataAdmin.Properties.Resources.resources
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\obj\Debug\Interfete.csproj.GenerateResource.cache
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\obj\Debug\Interfete.csproj.CoreCompileInputs.cache
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\obj\Debug\Interfete.csproj.CopyComplete
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\obj\Debug\Interfete.dll
+D:\facultate\An3\sem2\final\Proiect_IP\Biblioteca\Interfete\obj\Debug\Interfete.pdb

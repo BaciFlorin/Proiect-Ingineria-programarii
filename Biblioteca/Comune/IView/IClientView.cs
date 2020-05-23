@@ -1,4 +1,12 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        IClientView                                              *
+ *  Copyright:   (c) 2020, Atomei Georgiana                               *
+ *  E-mail:      georgiana.atomei@student.tuiasi.ro                       *
+ *  Description: Interafata view-ului client.                             *
+ *                                                                        *
+ **************************************************************************/
+
 using System.Collections.Generic;
 using Entitati;
 

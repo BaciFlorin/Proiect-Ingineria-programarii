@@ -1,8 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        IClientController                                        *
+ *  Copyright:   (c) 2020, Atomei Georgiana                               *
+ *  E-mail:      georgiana.atomei@student.tuiasi.ro                       *
+ *  Description: Interafata controlerului client.                         *
+ *                                                                        *
+ **************************************************************************/
+
 using Entitati;
 
 namespace Comune
