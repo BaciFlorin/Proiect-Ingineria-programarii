@@ -1,4 +1,12 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        Creeaza un cont.cs                                       *
+ *  Copyright:   (c) 2020, Țurcaș Irina                                   *
+ *  Description: Interfata de inregistrare                                *
+ *                                                                        *
+ **************************************************************************/
+
+using System;
 using Entitati;
 using System.Drawing;
 using System.Windows.Forms;

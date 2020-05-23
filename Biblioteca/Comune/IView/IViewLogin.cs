@@ -1,4 +1,12 @@
-﻿namespace Comune
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        IViewLogin.cs                                            *
+ *  Copyright:   (c) 2020, Țurcaș Irina                                   *
+ *  Description: Interfata view-ului de autentificare                     *
+ *                                                                        *
+ **************************************************************************/
+
+namespace Comune
 {
     public interface IViewLogin
     {

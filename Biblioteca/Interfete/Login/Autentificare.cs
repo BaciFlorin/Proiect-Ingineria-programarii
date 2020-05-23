@@ -1,4 +1,12 @@
-﻿using Comune;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        Autentificare.cs                                         *
+ *  Copyright:   (c) 2020, Țurcaș Irina                                   *
+ *  Description: Interfata de login                                       *
+ *                                                                        *
+ **************************************************************************/
+
+using Comune;
 using Controlere;
 using Entitati;
 using System;

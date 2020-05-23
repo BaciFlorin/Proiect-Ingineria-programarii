@@ -1,4 +1,13 @@
-﻿using Entitati;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        ControllerLogin.cs                                       *
+ *  Copyright:   (c) 2020, Țurcaș Irina                                   *
+ *  Description: Clasa care controleaza operatiile ce se pot efectua      *  
+ *               asupra bazei de date la autentificare si inregistrare    *
+ *                                                                        *
+ **************************************************************************/
+
+using Entitati;
 using Operatii;
 using Comune;
 

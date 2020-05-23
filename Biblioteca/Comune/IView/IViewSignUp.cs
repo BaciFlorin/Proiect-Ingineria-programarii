@@ -1,8 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        IViewSignUp.cs                                           *
+ *  Copyright:   (c) 2020, Țurcaș Irina                                   *
+ *  Description: Interfata view-ului de inregistrare                      *
+ *                                                                        *
+ **************************************************************************/
 
 namespace Comune
 {

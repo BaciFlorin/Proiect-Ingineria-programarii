@@ -1,4 +1,12 @@
-﻿using Entitati;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        IControllerLogin.cs                                      *
+ *  Copyright:   (c) 2020, Țurcaș Irina                                   *
+ *  Description: Interfata controlerului de login                         *
+ *                                                                        *
+ **************************************************************************/
+
+using Entitati;
 
 namespace Comune
 {
